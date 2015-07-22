@@ -874,6 +874,14 @@ body {
     
 }
 
+.main_text {
+    font-size: 160%;
+    padding-top: 40px;
+    text-indent: 40px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
 @media (max-width: 767px /* @screen-xs-max */) { 
  
     header {
@@ -885,13 +893,10 @@ body {
         margin: 0 auto;
 
     }
+    .main_text {
 
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
-.main_text {
-    font-size: 160%;
-    padding-top: 40px;
-    text-indent: 40px;
-    margin-bottom: 20px;
-    text-align: justify;
-}
