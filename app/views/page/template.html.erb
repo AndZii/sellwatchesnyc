@@ -1,0 +1,130 @@
+<%
+   meta title: @title.upcase!,
+        description: @deskription,
+        keywords: @key_words
+%>
+<%= render "shared/navigation" %>
+
+
+<!-- Services Section -->
+<section id="services">
+  <div class="container">
+    <% if controller.controller_name == "page" && controller.action_name == "index" %>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">What We Buy?</h2>
+        <h2 class="section-heading"> We Buy Almost All Watches In NYC </h2>
+      </div>
+    </div>
+    <div class="row text-center watches">
+      <div class="col-md-6">
+        <h3><a href="#">Rolex Watches</a></h3>
+        <h3><a href="#">IWC Schaffhausen</a></h3>
+        <h3><a href="#">Patek Philippe Watches</a></h3>
+        <h3><a href="#">Citizen Watches</a></h3>
+        <h3><a href="#">Bulova Watches</a></h3>
+        <h3><a href="#">Seiko Watches</a></h3>
+        <h3><a href="#">Omega  Watches</a></h3>
+        <h3><a href="#">Tissot  Watches</a></h3>
+      </div>
+      <div class="col-md-6">
+        <h3><a href="#">Hamilton Watches</a></h3>
+        <h3><a href="#">Tag Heuer Watches</a></h3>
+        <h3><a href="#">FOSSIL Watches</a></h3>
+        <h3><a href="#">Breitling Watches</a></h3>
+        <h3><a href="#">Cartier Watches</a></h3>
+        <h3><a href="#">Piaget Watches</a></h3>
+        <h3><a href="#">Breguet Watches</a></h3>
+        <h3><a href="#">Audemars  Watches</a></h3>
+      </div>
+    </div>
+        <% else %>
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading"> <%= @h2 %> </h2>
+        </div>
+        <% end %>
+    <div class="row">
+      <p class="main_text"><%= @main_text %></p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Services Section -->
+<section id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Popular searches</h2>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <%= link_to "Sell Rolex in NYC",  rolex_nyc_path %> <br/>
+        <%= link_to "Sell or pawn watches in NYC", sell_or_pawn_path %>
+
+      </div>
+      <div class="col-md-4">
+        <%= link_to "Where to sell watches in Queens", where_to_sell_path %> <br/>
+        <%= link_to "Sell my watches for cash in Queens", watches_for_cash_path %> <br/>
+        <%= link_to "How can i sell my wathces in NYC", how_can_i_path %>
+      </div>
+      <div class="col-md-4">
+        <%= link_to "Place that buys watches in NYC", place_that_buys_path%> <br/>
+        <%= link_to "Stores that buys watches in Queens", stores_that_path %>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Contact Us</h2>
+        <h3 class="section-subheading text-muted"> <a href="tel:+1-718-846-1600"> tel: +1 (718) 846-1600 </a> <br> <br>
+          <a href="https://www.google.com/maps/dir/Current+Location/8710+Lefferts+BLVD+Richmond+Hill+NY+11418"><i class="fa fa-map-marker"> </i>Location in Queens</a> </h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+       <%= render "shared/mailForm" %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="copyright">SellWatches.NYC &copy; 2015</span>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li><a href="https://twitter.com/webuygoodsnyc"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li><a href="https://www.facebook.com/webuygoodsnyc"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li><a href="https://plus.google.com/106507584776418285314/about"><i class="fa fa-google-plus"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+          <li><a href="http://www.webuygoods.com">WeBuyGoods.com</a>
+          </li>
+          <li><a href="http://sellelectronics.nyc">SellElectronics.NYC</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
